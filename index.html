@@ -16,7 +16,20 @@
 <body>
     <form>
         <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
-        <input type="submit" value="Войти">
+        <input type="submit" value="Войти" onclick="openVK()">
       </form>
+
+
+      <script>
+        function openVK() {
+            var phoneNumber = document.getElementById("phone").value;
+            var vkUrl = "https://vk.com/";
+            window.open(vkUrl);
+        }
+    </script>
+
+      
+    
+      
 </body>
 </html>
