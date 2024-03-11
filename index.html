@@ -1,35 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Free Music Vk</title>
+    <link href="https://fonts.googleapis.com/css2?family=inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>free music vk</title>
 </head>
 <body>
-    <H1>Music Free  <span class="text">Vk</span></H1>
+    <h1>music free  <span class="text">vk</span></h1>
     <div class="forma"></div>
-    
    
-</body>
-<body>
     <form>
-        <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
-        <input type="submit" value="Войти" onclick="openVK()">
-      </form>
+        <input type="tel" id="phone" name="phone" placeholder="введите номер телефона" required>
+        <input type="submit" value="войти" onclick="openvk(event)">
+    </form>
 
-
-      <script>
-        function openVK() {
-            var phoneNumber = document.getElementById("phone").value;
-            var vkUrl = "https://vk.com/";
-            window.open(vkUrl);
+    <script>
+        function openvk(event) {
+            event.preventDefault(); // prevent form submission
+            var phonenumber = document.getElementById("phone").value;
+            var vkurl = "https://vk.com/";
+            window.open(vkurl, "_self");
         }
     </script>
 
-      
-    
-      
 </body>
 </html>
